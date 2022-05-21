@@ -100,7 +100,8 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Creando estructura de archivos"
             echo "[INFO] Creando estructura de archivos" >> Install.log
             
-            mkdir -p $HOME/.config/nvim/Modules
+            mkdir $HOME/.config/nvim
+            mkdir $HOME/.config/nvim/Modules
             
             echo "[INFO] Carpetas creadas"
             echo "[INFO] Carpetas creadas" >> Install.log
@@ -144,7 +145,8 @@ elif [ $MENU = '2' ]; then
     echo "[INFO] Creando estructura de archivos"
     echo "[INFO] Creando estructura de archivos" >> Install.log
     
-    mkdir -p $HOME/.config/nvim/Modules
+    mkdir $HOME/.config/nvim
+    mkdir $HOME/.config/nvim/Modules
     
     echo "[INFO] Carpetas creadas"
     echo "[INFO] Carpetas creadas" >> Install.log
