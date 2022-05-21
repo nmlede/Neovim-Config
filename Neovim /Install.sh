@@ -20,8 +20,6 @@ fi
 
 touch Install.log
 
-FOLDER = pwd
-
 echo "Seleccione una opcion:"
 echo "1- Instalar Neovim NMBuild desde cero"
 echo "2- Reinstalar Neovim NMBuild"
@@ -50,12 +48,12 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp $FOLDER/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
             
             if [ -f "$HOME/.config/nvim/init.vim" ]; then
                 echo "[INFO] Archivo init.vim ya existe, desea reemplazarlo? (y/n)"
@@ -109,13 +107,13 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp $FOLDER/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-            cp $FOLDER/nvim/init.vim $HOME/.config/nvim/
+            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/init.vim $HOME/.config/nvim/
             
             echo "[INFO] Archivos copiados"
             echo "[INFO] Archivos copiados" >> Install.log
@@ -153,13 +151,13 @@ elif [ $MENU = '2' ]; then
     echo "[INFO] Copiando archivos"
     echo "[INFO] Copiando archivos" >> Install.log
     
-    cp $FOLDER/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-    cp $FOLDER/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
-    cp $FOLDER/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
-    cp $FOLDER/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-    cp $FOLDER/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-    cp $FOLDER/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-    cp $FOLDER/nvim/init.vim $HOME/.config/nvim/
+    cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/init.vim $HOME/.config/nvim/
     
     echo "[INFO] Archivos copiados"
     echo "[INFO] Archivos copiados" >> Install.log
