@@ -1,6 +1,6 @@
 " Dashboard ---------------------------------------------------------------------------------"
 " Link to GitHub https://github.com/glepnir/dashboard-nvim
-" Dashboard seccion file: ~/.local/share/nvim/plugged/dashboard-nvim/autoload/section.vim"
+" Dashboard seccion file: ~/.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard/section.vim"
 let g:mapleader="\<Space>"
 let g:dashboard_custom_header = ['nvim']
 let g:dashboard_default_executive ='telescope'
