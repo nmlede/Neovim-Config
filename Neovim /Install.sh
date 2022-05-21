@@ -41,22 +41,19 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Creando estructura de archivos"
             echo "[INFO] Creando estructura de archivos" >> Install.log
             
-            mkdir $HOME/.config/nvim/Modules/
+            mkdir $HOME/.config/nvim/Modules
             
             echo "[INFO] Carpetas creadas"
             echo "[INFO] Carpetas creadas" >> Install.log
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp -R $PWD/nvim/Modules $HOME/.config/nvim/
-            cp $PWD/nvim/init.vim $HOME/.config/nvim/
-
-            SECTION_PATH=$HOME.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard
-            if [ -f "$SECTION_PATH/section.vim" ]; then
-                rm $SECTION_PATH/section.vim
-            fi
-
-            mv $PWD/nvim/dashboard-section.vim $SECTION_PATH/section.vim
+            cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
             
             if [ -f "$HOME/.config/nvim/init.vim" ]; then
                 echo "[INFO] Archivo init.vim ya existe, desea reemplazarlo? (y/n)"
@@ -68,7 +65,7 @@ if [ $MENU = '1' ]; then
                     echo "[INFO] Copiando archivo init.vim"
                     echo "[INFO] Copiando archivo init.vim" >> Install.log
                     
-                    cp /nvim/init.vim $HOME/.config/nvim/
+                    cp $PWD/nvim/init.vim $HOME/.config/nvim/
                     
                     echo "[INFO] Archivo copiado"
                     echo "[INFO] Archivo copiado" >> Install.log
@@ -83,7 +80,7 @@ if [ $MENU = '1' ]; then
                 echo "[INFO] Copiando archivo init.vim"
                 echo "[INFO] Copiando archivo init.vim" >> Install.log
                 
-                cp /nvim/init.vim $HOME/.config/nvim/
+                cp $PWD/nvim/init.vim $HOME/.config/nvim/
                 
                 echo "[INFO] Archivo copiado"
                 echo "[INFO] Archivo copiado" >> Install.log
@@ -103,23 +100,21 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Creando estructura de archivos"
             echo "[INFO] Creando estructura de archivos" >> Install.log
             
-            mkdir -p $HOME/.config/nvim/Modules/
+            mkdir -p $HOME/.config/nvim/Modules
             
             echo "[INFO] Carpetas creadas"
             echo "[INFO] Carpetas creadas" >> Install.log
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp -R $PWD/nvim/Modules $HOME/.config/nvim/
+            cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/init.vim $HOME/.config/nvim/
 
-            SECTION_PATH=$HOME.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard
-            if [ -f "$SECTION_PATH/section.vim" ]; then
-                rm $SECTION_PATH/section.vim
-            fi
-
-            mv $PWD/nvim/dashboard-section.vim $SECTION_PATH/section.vim
-            
             echo "[INFO] Archivos copiados"
             echo "[INFO] Archivos copiados" >> Install.log
             echo "[INFO] Estructura de archivos creada"
@@ -145,26 +140,24 @@ if [ $MENU = '1' ]; then
 elif [ $MENU = '2' ]; then
     echo "##### Reinstalando Neovim NMBuild #####"
 
-    rm -r $HOME/.config/nvim
+    rm -rf $HOME/.config/nvim
     echo "[INFO] Creando estructura de archivos"
     echo "[INFO] Creando estructura de archivos" >> Install.log
     
-    mkdir -p $HOME/.config/nvim/Modules/
+    mkdir -p $HOME/.config/nvim/Modules
     
     echo "[INFO] Carpetas creadas"
     echo "[INFO] Carpetas creadas" >> Install.log
     echo "[INFO] Copiando archivos"
     echo "[INFO] Copiando archivos" >> Install.log
     
-    cp -R $PWD/nvim/Modules $HOME/.config/nvim/
+    cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/init.vim $HOME/.config/nvim/
-    
-    SECTION_PATH=$HOME.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard
-    if [ -f "$SECTION_PATH/section.vim" ]; then
-                rm $SECTION_PATH/section.vim
-    fi
-
-    mv $PWD/nvim/dashboard-section.vim $SECTION_PATH/section.vim
     
     echo "[INFO] Archivos copiados"
     echo "[INFO] Archivos copiados" >> Install.log
