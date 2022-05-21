@@ -25,7 +25,7 @@ echo "1- Instalar Neovim NMBuild desde cero"
 echo "2- Reinstalar Neovim NMBuild"
 echo "3- Desinstalar Neovim NMBuild"
 echo ""
-echo -p "Seleccione una opcion: " MENU
+read -p "Seleccione una opcion: " MENU
 
 if [ $MENU = '1' ]; then
     echo "Desea instalar la build de neovim? : (y/n)" 
