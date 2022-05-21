@@ -48,12 +48,8 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+            cp -R $PWD/nvim/Modules $HOME/.config/nvim/
+            cp $PWD/nvim/init.vim $HOME/.config/nvim/
 
             SECTION_PATH=$HOME.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard
             if [ -f "$SECTION_PATH/section.vim" ]; then
@@ -114,12 +110,7 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+            cp -R $PWD/nvim/Modules $HOME/.config/nvim/
             cp $PWD/nvim/init.vim $HOME/.config/nvim/
 
             SECTION_PATH=$HOME.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard
@@ -165,12 +156,7 @@ elif [ $MENU = '2' ]; then
     echo "[INFO] Copiando archivos"
     echo "[INFO] Copiando archivos" >> Install.log
     
-    cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/dashboard.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/deoplete.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+    cp -R $PWD/nvim/Modules $HOME/.config/nvim/
     cp $PWD/nvim/init.vim $HOME/.config/nvim/
     
     SECTION_PATH=$HOME.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard
