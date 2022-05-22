@@ -1,7 +1,9 @@
 -- Dashboard ---------------------------------------------------------------------------------"
 -- Link to GitHub https://github.com/glepnir/dashboard-nvim
 -- Dashboard seccion file: ~/.local/share/nvim/plugged/dashboard-nvim/autoload/dashboard/section.vim"
-
+--
+--
+--
 vim.g.dashboard_default_executive = 'telescope'
 vim.g.dashboard_custom_header = { 'nvim' }
 

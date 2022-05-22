@@ -1,5 +1,7 @@
 " General Config File "
-
+"
+"
+"
 " Basic settings ----------------------------------------------------------------------------"
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
@@ -51,6 +53,6 @@ let g:lightline = {
   \ 'colorscheme': 'tokyonight',
   \ }
  
-" Commentary----------------------------------------------------------------------------------"
+" Commentary---------------------------------------------------------------------------------"
 " Presionar gcc sobre la linea a comentar. Puede seleccionar varias lineas y
 " comentarlas tambien.

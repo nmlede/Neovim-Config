@@ -15,7 +15,7 @@ source $HOME/.config/nvim/Modules/keymap.vim
 
 " Plugin configuration files
 source $HOME/.config/nvim/Modules/dashboard.lua
-source $HOME/.config/nvim/Modules/deoplete.vim
 source $HOME/.config/nvim/Modules/telescope.vim
 source $HOME/.config/nvim/Modules/nvim-tree.vim
-
+source $HOME/.config/nvim/Modules/lspconfig.lua
+source $HOME/.config/nvim/Modules/nvim-cmp.vim
