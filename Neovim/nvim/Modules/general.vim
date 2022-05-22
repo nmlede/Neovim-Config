@@ -1,5 +1,6 @@
-" General Config File "
-"
+"------------------"
+" General Settings "
+"------------------"
 "
 "
 " Basic settings ----------------------------------------------------------------------------"
@@ -24,16 +25,13 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-" set spell                 " enable spell check (may need to download language package)
-" set noswapfile            " disable creating swap file
-" set backupdir=~/.cache/vim " Directory to store backup files.
 
 " Colorscheme -------------------------------------------------------------------------------"
 if !has('gui_running')
   set t_Co=256
 endif
 
-set termguicolors  " Activa true colors en la terminal
+set termguicolors
 let g:tokyonight_style = "night"
 let g:tokyonight_italic_functions = 1
 let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
@@ -54,5 +52,4 @@ let g:lightline = {
   \ }
  
 " Commentary---------------------------------------------------------------------------------"
-" Presionar gcc sobre la linea a comentar. Puede seleccionar varias lineas y
-" comentarlas tambien.
+" Press 'gcc' on the line to comment. You can select multiple lines and comment them too.

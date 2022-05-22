@@ -1,4 +1,6 @@
-" nvim-tree.lua -----------------------------------------------------------------------------"
+"------------------------" 
+" Nvim-tree.lua Settings "
+"------------------------"  
 " Link to GitHub https://github.com/kyazdani42/nvim-tree.lua
 "
 "

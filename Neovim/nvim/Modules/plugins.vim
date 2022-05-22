@@ -1,4 +1,6 @@
-" Directorio de plugins ---------------------------------------------------------------------"
+"-------------------" 
+" Plugins installed "
+"-------------------" 
 " Link to Vim-Plug GitHub https://github.com/junegunn/vim-plug
 "
 "

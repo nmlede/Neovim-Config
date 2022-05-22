@@ -1,4 +1,6 @@
--- LSP Config file 
+--"--------------"
+--" LSP Settings "
+--"--------------"  
 -- Add here all languaje servers you need
 -- Example 'npm install -g pyright ---> This install pyright server'
 -- Link to GitHub https://github.com/neovim/nvim-lspconfig
@@ -24,8 +26,8 @@ local on_attach=function(client,bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'C-k', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'C-n', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'C-p', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+  -- vim.api.nvim_buf_set_keymap(bufnr, 'n', 'C-n', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
+  -- vim.api.nvim_buf_set_keymap(bufnr, 'n', 'C-p', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   -- vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 

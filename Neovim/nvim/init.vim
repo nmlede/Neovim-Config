@@ -1,7 +1,8 @@
-" Neovim configuration file
-" Nicolas Marinucci
-" 21/05/2022
-" WIP
+"--------------------" 
+" Neovim Config File "
+" Nicolas Marinucci  "
+" WIP                "
+"--------------------" 
 "
 "
 " Modules --------------------------------------------------------"
