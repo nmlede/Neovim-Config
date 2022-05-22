@@ -25,6 +25,8 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
+" set wildoptions+=pum
+" set wildoptions+=tagfile
 
 " Colorscheme -------------------------------------------------------------------------------"
 if !has('gui_running')
