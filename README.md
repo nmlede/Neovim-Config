@@ -18,7 +18,7 @@ Inside the directory are a simple installer written in bash, the neovim plugins 
 ## __Installation:__
 
 1. git clone https://github.com/nmlede/Neovim-Config.git
-2. cd Neovim-Config
+2. cd Neovim-Config/Neovim
 3. bash Install.sh
 4. Follow the instructions
 5. Enjoy!
