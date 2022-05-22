@@ -5,7 +5,7 @@
 let g:deoplete#enable_at_startup = 1
 
 " Invertir direccion de navegacion (de arriba a abajo)
-let g:SuperTabDefaultCompletionType = '<c-n>'
+" let g:SuperTabDefaultCompletionType = '<c-n>'
 
 " Cerrar automaticamente la ventana de vista previa (donde se muestra documentación, si existe)
 augroup deopleteCompleteDoneAu

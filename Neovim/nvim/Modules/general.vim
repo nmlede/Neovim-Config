@@ -1,4 +1,4 @@
-" Config File "
+" General Config File "
 
 " Basic settings ----------------------------------------------------------------------------"
 set nocompatible            " disable compatibility to old-time vi
@@ -50,10 +50,7 @@ set noshowmode
 let g:lightline = {
   \ 'colorscheme': 'tokyonight',
   \ }
-  
-" Tagbar -------------------------------------------------------------------------------------"
-nnoremap <silent>;c :TagbarToggle<CR>
-
+ 
 " Commentary----------------------------------------------------------------------------------"
 " Presionar gcc sobre la linea a comentar. Puede seleccionar varias lineas y
 " comentarlas tambien.
