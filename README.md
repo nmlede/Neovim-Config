@@ -13,7 +13,6 @@ Inside the directory are a simple installer written in bash, the neovim plugins 
 - Neovim > 0.5 (https://github.com/neovim/neovim/wiki/Installing-Neovim)
 - Vim-Plug (https://github.com/junegunn/vim-plug)
 - Ctags for the Tagbar plugin (https://github.com/universal-ctags/ctags)
-- Automake to install Ctags
 
 ## __Installation:__
 
@@ -21,6 +20,7 @@ Inside the directory are a simple installer written in bash, the neovim plugins 
 2. cd Neovim-Config/Neovim
 3. bash Install.sh
 4. Follow the instructions
-5. Enjoy!
+5. After instalation, you most run :PlugInstall on nvim
+6. Enjoy!
 
 ## __Work in progress.__

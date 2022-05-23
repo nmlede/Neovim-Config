@@ -7,8 +7,20 @@
 --
 --
 --
+require("nvim-lsp-installer").setup({
+    automatic_installation = true, 
+    ui = {
+        icons = {
+            server_installed = "✓",
+            server_pending = "➜",
+            server_uninstalled = "✗"
+        }
+    }
+})
+
+
 local nvim_lsp=require('lspconfig')
-local servers={'pyright'} -- List of server you have installed
+local servers={} -- List of server you have installed
 
 -- When LSP is on, you may use this keymaps
 local on_attach=function(client,bufnr)

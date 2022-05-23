@@ -1,9 +1,11 @@
-" Neovim configuration file
-" Nicolas Marinucci
-" 21/05/2022
-" WIP
+"----------------------"
+" Neovim init.vim file "
+" Nicolas Marinucci    "
+" WIP                  "
+"----------------------"
 "
 "
+" In this file we have all imports for de build
 " Modules --------------------------------------------------------"
 "
 " Plugins installed (vim-plug)
