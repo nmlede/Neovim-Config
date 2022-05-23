@@ -26,7 +26,7 @@ filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
 " set wildoptions+=pum
-" set wildoptions+=tagfile
+" 
 
 " Colorscheme -------------------------------------------------------------------------------"
 if !has('gui_running')
@@ -45,13 +45,3 @@ let g:tokyonight_colors = {
 \ }
 
 colorscheme tokyonight
-
-" Lightline ---------------------------------------------------------------------------------"
-set laststatus=2
-set noshowmode
-let g:lightline = {
-  \ 'colorscheme': 'tokyonight',
-  \ }
- 
-" Commentary---------------------------------------------------------------------------------"
-" Press 'gcc' on the line to comment. You can select multiple lines and comment them too.

@@ -19,3 +19,6 @@ source $HOME/.config/nvim/Modules/telescope.vim
 source $HOME/.config/nvim/Modules/nvim-tree.vim
 source $HOME/.config/nvim/Modules/lspconfig.lua
 source $HOME/.config/nvim/Modules/nvim-cmp.vim
+source $HOME/.config/nvim/Modules/lualine.vim
+source $HOME/.config/nvim/Modules/tagbar.vim
+source $HOME/.config/nvim/Modules/wilder.vim
