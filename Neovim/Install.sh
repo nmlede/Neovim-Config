@@ -49,13 +49,16 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Copiando archivos" >> Install.log
             
             cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
             
             if [ -f "$HOME/.config/nvim/init.vim" ]; then
                 echo "[INFO] Archivo init.vim ya existe, desea reemplazarlo? (y/n)"
@@ -111,13 +114,16 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Copiando archivos" >> Install.log
             
             cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
+            cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
             cp $PWD/nvim/init.vim $HOME/.config/nvim/
 
             echo "[INFO] Archivos copiados"
@@ -158,13 +164,16 @@ elif [ $MENU = '2' ]; then
     echo "[INFO] Copiando archivos" >> Install.log
     
     cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/init.vim $HOME/.config/nvim/
     
     echo "[INFO] Archivos copiados"
