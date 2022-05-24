@@ -19,7 +19,21 @@ fi
 touch Install.log
 
 function copy_files(){
-    cp -R $PWD/nvim/Modules/ $HOME/.config/nvim/Modules
+    cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/indent-guides.lua $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/keymap.lua $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
+    cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
+    
+    
+    
     }
 
 echo "#################################"
