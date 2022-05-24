@@ -1,5 +1,9 @@
 # __Neovim-Config__
 
+
+![WhatsApp Image 2022-05-23 at 10 22 57 PM](https://user-images.githubusercontent.com/68403740/169931445-be896dab-c382-4d7d-af25-dc50d00a2d8b.jpeg)
+
+
 This is my own neovim setup .
 
 At the moment it is a simple configuration but it meets what I currently need.
@@ -13,6 +17,7 @@ Inside the directory are a simple installer written in bash, the neovim plugins 
 - Neovim > 0.5 (https://github.com/neovim/neovim/wiki/Installing-Neovim)
 - Vim-Plug (https://github.com/junegunn/vim-plug)
 - Ctags for the Tagbar plugin (https://github.com/universal-ctags/ctags)
+- You will have to install some nerdfont (https://www.nerdfonts.com)
 
 ## __Installation:__
 
