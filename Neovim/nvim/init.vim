@@ -24,3 +24,4 @@ source $HOME/.config/nvim/Modules/nvim-cmp.vim
 source $HOME/.config/nvim/Modules/lualine.vim
 source $HOME/.config/nvim/Modules/tagbar.vim
 source $HOME/.config/nvim/Modules/wilder.vim
+source $HOME/.config/nvim/Modules/indent-guides.lua

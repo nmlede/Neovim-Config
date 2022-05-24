@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 echo ""
 echo "##########################################"
-echo "#                                        #"
 echo "#        Neovim NMBuild Installer        #"
-echo "#                                        #"
 echo "##########################################"
 echo ""
 echo ""
@@ -20,10 +18,14 @@ fi
 
 touch Install.log
 
-echo "Seleccione una opcion:"
-echo "1- Instalar Neovim NMBuild desde cero"
-echo "2- Reinstalar Neovim NMBuild"
-echo "3- Desinstalar Neovim NMBuild"
+function copy_files(){
+    cp -R $PWD/nvim/Modules/ $HOME/.config/nvim/Modules
+    }
+
+echo "#################################"
+echo "# 1- Instalar Neovim NMBuild    #"   
+echo "# 2- Desinstalar Neovim NMBuild #"
+echo "#################################"
 echo ""
 read -p "Seleccione una opcion: " MENU
 
@@ -32,40 +34,31 @@ if [ $MENU = '1' ]; then
     read -p "Ingrese una opcion: " SELECCION 
 
     if [ $SELECCION = 'y' ]; then
-        echo "[INFO] Ha seleccionado $SELECCION"
+        echo "#####################################"
         echo "##### Instalando Neovim NMBuild #####"
-        
+        echo "#####################################"
+    
         if [ -d "$HOME/.config/nvim" ]; then
-            echo "[INFO] La carpeta destino ya existe"
-            echo "[INFO] La carpeta destino ya existe" >> Install.log
+            echo "[INFO] La carpeta destino existe"
+            echo "[INFO] La carpeta destino existe" >> Install.log
             echo "[INFO] Creando estructura de archivos"
             echo "[INFO] Creando estructura de archivos" >> Install.log
-            
+        
             mkdir $HOME/.config/nvim/Modules
-            
+            copy_files
+
             echo "[INFO] Carpetas creadas"
             echo "[INFO] Carpetas creadas" >> Install.log
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
             
-            cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
-            
+           
             if [ -f "$HOME/.config/nvim/init.vim" ]; then
-                echo "[INFO] Archivo init.vim ya existe, desea reemplazarlo? (y/n)"
+                echo "[INFO] Archivo init.vim existente, desea reemplazarlo? (y/n)"
                 read -p "Ingrese una opcion: " SELECCION        
                 
                 if [ $SELECCION = 'y' ]; then
-                    rm $HOME/.config/nvim/init.vim
+                    mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/init.vim.original
                     
                     echo "[INFO] Copiando archivo init.vim"
                     echo "[INFO] Copiando archivo init.vim" >> Install.log
@@ -96,9 +89,6 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Estructura de archivos creada"
             echo "[INFO] Estructura de archivos creada" >> Install.log
         
-            ls $HOME/.config/nvim/
-            ls $HOME/.config/nvim/Modules/
-        
         else
             echo "[INFO] La carpeta destino no existe"
             echo "[INFO] La carpeta destino no existe" >> Install.log
@@ -112,18 +102,8 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Carpetas creadas" >> Install.log
             echo "[INFO] Copiando archivos"
             echo "[INFO] Copiando archivos" >> Install.log
-            
-            cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-            cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
+           
+            copy_files
             cp $PWD/nvim/init.vim $HOME/.config/nvim/
 
             echo "[INFO] Archivos copiados"
@@ -131,8 +111,6 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Estructura de archivos creada"
             echo "[INFO] Estructura de archivos creada" >> Install.log
         
-            ls $HOME/.config/nvim/
-            ls $HOME/.config/nvim/Modules/
         fi
         
         echo "[INFO] Instalacion finalizada"
@@ -149,52 +127,23 @@ if [ $MENU = '1' ]; then
     fi
 
 elif [ $MENU = '2' ]; then
-    echo "##### Reinstalando Neovim NMBuild #####"
-
-    rm -rf $HOME/.config/nvim
-    echo "[INFO] Creando estructura de archivos"
-    echo "[INFO] Creando estructura de archivos" >> Install.log
-    
-    mkdir $HOME/.config/nvim
-    mkdir $HOME/.config/nvim/Modules
-    
-    echo "[INFO] Carpetas creadas"
-    echo "[INFO] Carpetas creadas" >> Install.log
-    echo "[INFO] Copiando archivos"
-    echo "[INFO] Copiando archivos" >> Install.log
-    
-    cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/init.vim $HOME/.config/nvim/
-    
-    echo "[INFO] Archivos copiados"
-    echo "[INFO] Archivos copiados" >> Install.log
-    echo "[INFO] Estructura de archivos creada"
-    echo "[INFO] Estructura de archivos creada" >> Install.log
-
-    ls $HOME/.config/nvim/
-    ls $HOME/.config/nvim/Modules/
-    
-    echo "[INFO] Reinstalacion finalizada"
-    echo "[INFO] Reinstalacion finalizada" >> Install.log
-    echo "##### Todo listo, a programar! #####]"
-    exit 0
-
-elif [ $MENU = '3' ]; then
+    echo "#######################################"
     echo "##### Deinstalando Neovim NMBuild #####"
+    echo "#######################################"
+    echo ""
+    echo ""
     echo "[INFO] Eliminando archivos"
     echo "[INFO] Eliminando archivos" >> Install.log
 
-    rm -r $HOME/.config/nvim
+    if [ $HOME/.config/nvim/init.vim.original ]; then
+        echo "[INFO] Restaurando archivos originales"
+        echo "[INFO] Restaurando archivos originales" >> Install.log
+        
+        mv $HOME/.config/nvim/init.vim.original $HOME/.config/nvim/init.vim
+        rm -rf $HOME/.config/nvim/Modules
+    else
+        rm -rf $HOME/.config/nvim
+    fi    
 
     echo "[INFO] Desinstalacion finalizada"
     echo "[INFO] Desinstalacion finalizada" >> Install.log
