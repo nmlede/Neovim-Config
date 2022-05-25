@@ -19,6 +19,7 @@ fi
 touch Install.log
 
 function copy_files(){
+    # This function copy all files in Modules to you nvim/Modules folder
     cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/indent-guides.lua $HOME/.config/nvim/Modules/
@@ -31,9 +32,7 @@ function copy_files(){
     cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
     cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
-    
-    
-    
+    cp $PWD/nvim/Modules/treesitter.lua $HOME/.config/nvim/Modules/
     }
 
 echo "#################################"
@@ -129,7 +128,11 @@ if [ $MENU = '1' ]; then
         
         echo "[INFO] Instalacion finalizada"
         echo "[INFO] Instalacion finalizada" >> Install.log
-        echo "##### Todo listo, a programar! #####]"
+        echo ""
+        echo ""
+        echo "####################################"
+        echo "##### Todo listo, a programar! #####"
+        echo "####################################"
         exit 0
 
     elif [ $SELECCION = 'n' ]; then
@@ -149,7 +152,7 @@ elif [ $MENU = '2' ]; then
     echo "[INFO] Eliminando archivos"
     echo "[INFO] Eliminando archivos" >> Install.log
 
-    if [ $HOME/.config/nvim/init.vim.original ]; then
+    if [ "$HOME/.config/nvim/init.vim.original" ]; then
         echo "[INFO] Restaurando archivos originales"
         echo "[INFO] Restaurando archivos originales" >> Install.log
         
@@ -161,6 +164,10 @@ elif [ $MENU = '2' ]; then
 
     echo "[INFO] Desinstalacion finalizada"
     echo "[INFO] Desinstalacion finalizada" >> Install.log
-    echo "##### Gracias, vuelva pronto! #####]"
+    echo ""
+    echo ""
+    echo "###################################"
+    echo "##### Gracias, vuelva pronto! #####"
+    echo "###################################"
     exit 0
 fi

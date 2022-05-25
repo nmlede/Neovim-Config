@@ -14,10 +14,11 @@ Inside the directory are a simple installer written in bash, the neovim plugins 
 
 ## __Requirements:__
 
-- Neovim > 0.5 (https://github.com/neovim/neovim/wiki/Installing-Neovim)
-- Vim-Plug (https://github.com/junegunn/vim-plug)
-- Ctags for the Tagbar plugin (https://github.com/universal-ctags/ctags)
-- You will have to install some nerdfont (https://www.nerdfonts.com)
+- Neovim >= 0.5.0 (https://github.com/neovim/neovim/wiki/Installing-Neovim).
+- Vim-Plug (https://github.com/junegunn/vim-plug).
+- Ctags for the Tagbar plugin (https://github.com/universal-ctags/ctags).
+- You will have to install some nerdfont (https://www.nerdfonts.com).
+- Git, make, pip, npm and node installed.
 
 ## __Installation:__
 
