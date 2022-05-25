@@ -1,13 +1,13 @@
-"-----------------" 
-" Keymap Settings "
-"-----------------" 
-" Contains the keymap of all plugins
+"------------" 
+"  Keymaps   "
+"------------" 
+" Keymaps generales y de los plugins
 "
 "
 " Leader ---------------------------------------------------------
 let g:mapleader=";"
 
-" General navigation----------------------------------------------
+" Navegacion general "--------------------------------------------
 " Control x = Open file in hsplit window
 " Control v = Open file in vsplit window
 " Control t = Open file in a new tab
@@ -27,16 +27,6 @@ nnoremap <Leader>ff :DashboardFindFile<CR>
 nnoremap <Leader>nf :DashboardNewFile<CR>
 nnoremap <Leader>db :Dashboard<CR>
 
-" Telescope "-----------------------------------------------------
-" nnoremap <silent>;f <cmd>Telescope find_files<cr>
-" nnoremap <silent>;g <cmd>Telescope live_grep<cr>
-" nnoremap <silent>;b <cmd>Telescope buffers<cr>
-" nnoremap <silent>;h <cmd>Telescope help_tags<cr>
-
-" Commentary------------------------------------------------------
-" gcc on a line to comment line
-" gcc on a group of line to comment that group
-
 " nvim-tree.lua "-------------------------------------------------
 nnoremap <Leader>tt :NvimTreeToggle<CR>
 nnoremap <Leader>tr :NvimTreeRefresh<CR>
@@ -44,3 +34,12 @@ nnoremap <Leader>tf :NvimTreeFindFile<CR>
 
 " Tagbar "--------------------------------------------------------
 nnoremap <Leader>tb :TagbarToggle<CR>
+
+" Telescope "-----------------------------------------------------
+" nnoremap <silent>;f <cmd>Telescope find_files<cr>
+" nnoremap <silent>;g <cmd>Telescope live_grep<cr>
+" nnoremap <silent>;b <cmd>Telescope buffers<cr>
+" nnoremap <silent>;h <cmd>Telescope help_tags<cr>
+
+" Commentary "----------------------------------------------------
+" gcc sobre una linea o un conjunto seleccionado para comentarlas

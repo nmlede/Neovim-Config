@@ -1,10 +1,10 @@
-----------------------------
--- Indent-guides settings --
-----------------------------
--- Link to GitHub: https://github.com/glepnir/indent-guides.nvim
+------------------------------------
+-- Configuracion de Indent-guides --
+------------------------------------
+-- Link a GitHub: https://github.com/glepnir/indent-guides.nvim
 --
 --
--- Basic settings
+-- Basicos
 indent_levels = 30;
 indent_guide_size = 1;
 indent_start_level = 1;
@@ -17,5 +17,5 @@ even_colors = { fg = '#2a3834',bg = '#332b36' };
 odd_colors = {fg = '#332b36',bg = '#2a3834'};
 
 require('indent_guides').setup({
-  -- put your options in here
+  -- Agrega tus opciones aca
 })

@@ -1,7 +1,7 @@
 --"-----------"
 --" Dashboard "
 --"-----------" 
--- Link to GitHub https://github.com/glepnir/dashboard-nvim
+-- Link a GitHub https://github.com/glepnir/dashboard-nvim
 --
 --
 --

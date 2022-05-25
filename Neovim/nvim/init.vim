@@ -5,24 +5,24 @@
 "----------------------"
 "
 "
-" In this file we have all imports for de build
-" Modules --------------------------------------------------------"
+" Modulos --------------------------------------------------------"
 "
-" Plugins installed (vim-plug)
-source $HOME/.config/nvim/Modules/plugins.vim
+" Plugins instalados (vim-plug)
+source $HOME/.config/nvim/Modulos/plugins.vim
 
-" General configuration file
-source $HOME/.config/nvim/Modules/general.vim
-source $HOME/.config/nvim/Modules/keymap.vim
+" Archivos de configuracion general
+source $HOME/.config/nvim/Modulos/general.lua
+source $HOME/.config/nvim/Modulos/keymap.vim
+source $HOME/.config/nvim/Modulos/colorscheme.vim
 
-" Plugin configuration files
-source $HOME/.config/nvim/Modules/dashboard.lua
-source $HOME/.config/nvim/Modules/telescope.vim
-source $HOME/.config/nvim/Modules/nvim-tree.vim
-source $HOME/.config/nvim/Modules/lspconfig.lua
-source $HOME/.config/nvim/Modules/nvim-cmp.vim
-source $HOME/.config/nvim/Modules/lualine.vim
-source $HOME/.config/nvim/Modules/tagbar.vim
-source $HOME/.config/nvim/Modules/wilder.vim
-source $HOME/.config/nvim/Modules/indent-guides.lua
-source $HOME/.config/nvim/Modules/treesitter.lua
+" Archivos de configuracion de plugins 
+source $HOME/.config/nvim/Modulos/dashboard.lua
+source $HOME/.config/nvim/Modulos/telescope.vim
+source $HOME/.config/nvim/Modulos/nvim-tree.lua
+source $HOME/.config/nvim/Modulos/lspconfig.lua
+source $HOME/.config/nvim/Modulos/nvim-cmp.vim
+source $HOME/.config/nvim/Modulos/lualine.lua
+source $HOME/.config/nvim/Modulos/tagbar.vim
+source $HOME/.config/nvim/Modulos/wilder.vim
+source $HOME/.config/nvim/Modulos/indent-guides.lua
+source $HOME/.config/nvim/Modulos/treesitter.lua

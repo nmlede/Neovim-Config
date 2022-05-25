@@ -1,7 +1,7 @@
-"-----------------" 
-" Wilder Settings "
-"-----------------" 
-" Link to GitHub: https://github.com/gelguy/wilder.nvim
+"---------------------------" 
+"  Configuracion de Wilder  "
+"---------------------------" 
+" Link a GitHub: https://github.com/gelguy/wilder.nvim
 "
 "
 "

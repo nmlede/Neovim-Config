@@ -1,7 +1,7 @@
-"-------------------"
-" Nvim-cmp Settings "
-"-------------------"
-" Link to GitHub https://github.com/hrsh7th/nvim-cmp
+"----------------------------"
+" Configuracion de Nvim-cmp  "
+"----------------------------"
+" Link a GitHub https://github.com/hrsh7th/nvim-cmp
 "
 "
 "

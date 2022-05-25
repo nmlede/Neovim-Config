@@ -1,16 +1,14 @@
-"-----------------"
-" tagbar Settings "
-"-----------------"
-" Link to GitHub: https://github.com/preservim/tagbar
+"-------------------------"
+" Configuracion de tagbar "
+"-------------------------"
+" Link a GitHub: https://github.com/preservim/tagbar
 "
 "
-" General Settings
-" let g:tagbar_width = max([25, winwidth(0) / 5])
+" Basicos
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
 let g:tagbar_show_data_type = 1
-" let g:tagbar_show_linenumbers = -1
 let g:tagbar_show_tag_linenumbers = 2
 let g:tagbar_expand = 1
 let g:tagbar_singleclick = 1

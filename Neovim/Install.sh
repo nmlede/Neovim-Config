@@ -19,20 +19,21 @@ fi
 touch Install.log
 
 function copy_files(){
-    # This function copy all files in Modules to you nvim/Modules folder
-    cp $PWD/nvim/Modules/dashboard.lua $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/general.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/indent-guides.lua $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/keymap.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/lspconfig.lua $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/lualine.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/nvim-cmp.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/nvim-tree.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/plugins.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/tagbar.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/telescope.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/wilder.vim $HOME/.config/nvim/Modules/
-    cp $PWD/nvim/Modules/treesitter.lua $HOME/.config/nvim/Modules/
+    # Fucion quie copia los archivos dentro de la carpeta destino
+    cp $PWD/nvim/Modulos/colorscheme.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/dashboard.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/general.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/indent-guides.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/keymap.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/lspconfig.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/lualine.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/nvim-cmp.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/nvim-tree.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/plugins.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/tagbar.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/telescope.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/treesitter.lua $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/wilder.vim $HOME/.config/nvim/Modulos/
     }
 
 echo "#################################"
@@ -57,7 +58,7 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Creando estructura de archivos"
             echo "[INFO] Creando estructura de archivos" >> Install.log
         
-            mkdir $HOME/.config/nvim/Modules
+            mkdir $HOME/.config/nvim/Modulos
             copy_files
 
             echo "[INFO] Carpetas creadas"
@@ -109,7 +110,7 @@ if [ $MENU = '1' ]; then
             echo "[INFO] Creando estructura de archivos" >> Install.log
             
             mkdir $HOME/.config/nvim
-            mkdir $HOME/.config/nvim/Modules
+            mkdir $HOME/.config/nvim/Modulos
             
             echo "[INFO] Carpetas creadas"
             echo "[INFO] Carpetas creadas" >> Install.log
@@ -157,7 +158,7 @@ elif [ $MENU = '2' ]; then
         echo "[INFO] Restaurando archivos originales" >> Install.log
         
         mv $HOME/.config/nvim/init.vim.original $HOME/.config/nvim/init.vim
-        rm -rf $HOME/.config/nvim/Modules
+        rm -rf $HOME/.config/nvim/Modulos
     else
         rm -rf $HOME/.config/nvim
     fi    

@@ -1,32 +1,26 @@
-"---------"
-" Lualine "
-"---------"
-" Link to GotHub: https://github.com/nvim-lualine/lualine.nvim
-"
-"
-"
-set laststatus=2
-set noshowmode
-
-" Default setting
-lua << END
-require('lualine').setup {
+--------------------------------
+--  Configuracion de Lualine  --
+--------------------------------
+-- Link a GotHub: https://github.com/nvim-lualine/lualine.nvim
+--
+--
+--
+require('lualine').setup{
   options = {
     icons_enabled = true,
     theme = 'tokyonight',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
-    disabled_filetypes = {},
+    disabled_filetypes = {'dashboard', 'NvimTree', 'Outline'},
     always_divide_middle = true,
-    globalstatus = false,
   },
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_y = {'location'},
+    lualine_z = {'progress'}
   },
   inactive_sections = {
     lualine_a = {},
@@ -39,4 +33,4 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
-END
+

@@ -1,7 +1,7 @@
-"-------------------" 
-" Plugins installed "
-"-------------------" 
-" Link to Vim-Plug GitHub https://github.com/junegunn/vim-plug
+"----------------------" 
+"  Plugins Instalados  "
+"----------------------" 
+" Link a GitHub https://github.com/junegunn/vim-plug
 "
 "
 "
