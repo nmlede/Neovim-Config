@@ -127,6 +127,8 @@ if [ $MENU = '1' ]; then
         
         fi
         
+        nvim --headless +PlugInstall +qa
+        
         echo "[INFO] Instalacion finalizada"
         echo "[INFO] Instalacion finalizada" >> Install.log
         echo ""
@@ -140,7 +142,9 @@ if [ $MENU = '1' ]; then
         echo "[INFO] Ha seleccionado $SELECCION"
         echo "[INFO] Instalacion cancelada."
         echo "[INFO] Instalacion cancelada." >> Install.log
-        echo "##### Gracias, vuelva pronto! #####]"
+        echo "###################################"
+        echo "##### Gracias, vuelva pronto! #####"
+        echo "###################################"
         exit 0
     fi
 
