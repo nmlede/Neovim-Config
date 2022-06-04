@@ -24,7 +24,6 @@ instalador escrito en bash.
 2. cd Neovim-Config/Neovim
 3. bash Install.sh
 4. Sigue las instrucciones
-5. Luego de la instalacion deberas correr :PlugInstall en nvim
-6. Disfruta, me llevo tiempo!
+5. Disfruta, me llevo tiempo!
 
 ## __Trabajo en proceso.__
