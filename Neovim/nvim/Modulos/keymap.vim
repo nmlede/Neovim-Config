@@ -22,8 +22,6 @@ let g:mapleader=";"
 
 " Dashboard "-----------------------------------------------------
 nnoremap <Leader>cf :e ~/.config/nvim/init.vim<CR>
-nnoremap <Leader>fh :DashboardFindHistory<CR>
-nnoremap <Leader>ff :DashboardFindFile<CR>
 nnoremap <Leader>nf :DashboardNewFile<CR>
 nnoremap <Leader>db :Dashboard<CR>
 
@@ -36,10 +34,10 @@ nnoremap <Leader>tf :NvimTreeFindFile<CR>
 nnoremap <Leader>tb :TagbarToggle<CR>
 
 " Telescope "-----------------------------------------------------
-" nnoremap <silent>;f <cmd>Telescope find_files<cr>
-" nnoremap <silent>;g <cmd>Telescope live_grep<cr>
-" nnoremap <silent>;b <cmd>Telescope buffers<cr>
-" nnoremap <silent>;h <cmd>Telescope help_tags<cr>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fh <cmd>Telescope search_history<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>ht <cmd>Telescope help_tags<cr>
 
 " Commentary "----------------------------------------------------
 " gcc sobre una linea o un conjunto seleccionado para comentarlas

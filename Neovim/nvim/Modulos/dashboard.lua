@@ -5,14 +5,29 @@
 --
 --
 --
-vim.g.dashboard_default_executive = 'telescope'
-vim.g.dashboard_custom_header = { 'nvim' }
--- vim.g.dashboard_custom_footer = {}
-
-vim.g.dashboard_custom_section = {
-  a = {description = {'  New File           	 Leader nf'}, command = ':DashboardNewFile'},
-  b = {description = {'  Find File          	 Leader ff'}, command = 'Telescope find_files'},
-  c = {description = {'  Open Tree          	 Leader tt'}, command = 'NvimTreeToggle'},
-  d = {description = {'  File History       	 Leader fh'}, command = 'DashboardFindHistory'},
-  e = {description = {'  Config File        	 Leader cf'}, command = 'edit ~/.config/nvim/init.vim'},
-  }
+local db = require('dashboard')
+db.default_executive = 'telescope'
+db.custom_header = { 'nvim' }
+db.custom_footer = {}
+db.custom_center = {
+      {icon = ' ',
+      desc = 'Nuevo Archivo                   ',
+      shortcut = 'Leader nf',
+      action ='DashboardNewFile'},
+      {icon = ' ',
+      desc = 'Buscar Archivo                  ',
+      action =  'Telescope find_files find_command=rg,--hidden,--files',
+      shortcut = 'Leader ff'},
+      {icon = ' ',
+      desc = 'Nvim Tree                       ',
+      action = 'NvimTreeToggle',
+      shortcut = 'Leader tt'},
+      {icon = ' ',
+      desc = 'Historial                       ',
+      action = 'DashboardFindHistory',
+      shortcut = 'Leader fh'},
+      {icon = ' ',
+      desc = 'Init.vim                        ',
+      action = 'edit ~/.config/nvim/init.vim',
+      shortcut = 'Leader cf'},
+    }
