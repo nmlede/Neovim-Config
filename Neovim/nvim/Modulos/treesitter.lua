@@ -18,7 +18,8 @@ require'nvim-treesitter.configs'.setup {
     "python",
     "json",
     "c",
-    "lua"
+    "lua",
+    "java"
   },
   sync_install = false, 
   additional_vim_regex_highlighting = true,

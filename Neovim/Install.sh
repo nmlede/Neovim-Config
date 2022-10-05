@@ -27,7 +27,7 @@ function copy_files(){
     cp $PWD/nvim/Modulos/keymap.vim $HOME/.config/nvim/Modulos/
     cp $PWD/nvim/Modulos/lspconfig.lua $HOME/.config/nvim/Modulos/
     cp $PWD/nvim/Modulos/lualine.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/nvim-cmp.vim $HOME/.config/nvim/Modulos/
+    cp $PWD/nvim/Modulos/nvim-cmp.lua $HOME/.config/nvim/Modulos/
     cp $PWD/nvim/Modulos/nvim-tree.lua $HOME/.config/nvim/Modulos/
     cp $PWD/nvim/Modulos/plugins.vim $HOME/.config/nvim/Modulos/
     cp $PWD/nvim/Modulos/tagbar.vim $HOME/.config/nvim/Modulos/

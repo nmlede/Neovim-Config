@@ -20,9 +20,10 @@ source $HOME/.config/nvim/Modulos/dashboard.lua
 source $HOME/.config/nvim/Modulos/telescope.vim
 source $HOME/.config/nvim/Modulos/nvim-tree.lua
 source $HOME/.config/nvim/Modulos/lspconfig.lua
-source $HOME/.config/nvim/Modulos/nvim-cmp.vim
+source $HOME/.config/nvim/Modulos/nvim-cmp.lua
 source $HOME/.config/nvim/Modulos/lualine.lua
 source $HOME/.config/nvim/Modulos/tagbar.vim
 source $HOME/.config/nvim/Modulos/wilder.vim
 source $HOME/.config/nvim/Modulos/indent-guides.lua
 source $HOME/.config/nvim/Modulos/treesitter.lua
+"source $HOME/.config/nvim/Modulos/java.lua

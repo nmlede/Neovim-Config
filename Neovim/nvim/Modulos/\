@@ -1,14 +1,12 @@
-"----------------------------"
-" Configuracion de Nvim-cmp  "
-"----------------------------"
-" Link a GitHub https://github.com/hrsh7th/nvim-cmp
-"
-"
-"
-set completeopt=menu,menuone,noselect
+------------------------------"
+-- Configuracion de Nvim-cmp  "
+------------------------------"
+-- Link a GitHub https://github.com/hrsh7th/nvim-cmp
+--
+--
+--
 
-lua <<EOF
-  -- Iconos 
+-- Iconos 
   local kind_icons = {
   Text = "",
   Method = "m",
@@ -37,10 +35,11 @@ lua <<EOF
   TypeParameter = "",
 }
   
-  -- Setup nvim-cmp.
-  local cmp = require'cmp'
+  
+-- Setup nvim-cmp.
+local cmp = require('cmp')
 
-  cmp.setup({
+cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)
@@ -96,11 +95,13 @@ lua <<EOF
   },
   })
 
-  -- Setup lspconfig.
-  local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  -- require('lspconfig')['<YOUR_LSP_SERVER>'].setup
-  require('lspconfig')['pyright'].setup {
-    capabilities = capabilities
-  } 
-EOF
+--   -- Setup lspconfig.
+--   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+--   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+--   -- require('lspconfig')['<YOUR_LSP_SERVER>'].setup
+--   require('lspconfig')['pyright'].setup {
+--     capabilities = capabilities
+-- }
+  
+
+

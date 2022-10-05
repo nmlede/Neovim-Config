@@ -6,9 +6,12 @@
 --
 --
 local db = require('dashboard')
+modulos = '~/.config/nvim/Modulos/'
 db.default_executive = 'telescope'
 db.custom_header = { 'nvim' }
 db.custom_footer = {}
+db.hide_statusline = false
+db.hide_tabline = false
 db.custom_center = {
       {icon = ' ',
       desc = 'Nuevo Archivo                   ',
@@ -30,4 +33,5 @@ db.custom_center = {
       desc = 'Init.vim                        ',
       action = 'edit ~/.config/nvim/init.vim',
       shortcut = 'Leader cf'},
+      
     }

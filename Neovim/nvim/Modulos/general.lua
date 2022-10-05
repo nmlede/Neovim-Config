@@ -23,6 +23,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2                          -- Espacios por indentacion
 vim.opt.tabstop = 2                             -- Espacios por tabs
 vim.opt.cursorline = true                       -- Resaltar lina actual
+vim.opt.cursorcolumn = true                     -- Resaltar columna actual
 vim.opt.number = true                           
 vim.opt.numberwidth = 4                         -- Ancho de columnas
 vim.opt.signcolumn = "yes"                      -- Mostrar siempre la altura del cursos

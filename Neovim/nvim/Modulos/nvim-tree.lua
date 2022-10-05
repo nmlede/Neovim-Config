@@ -15,15 +15,15 @@ require'nvim-tree'.setup {
       info = "",
       warning = "",
       error = "",
+      }
     }
-  },
-    view = {
-      width = 30,
-      height = 30,
-      hide_root_folder = false,
-      side = "left",
-  },
-}
+--    view = {
+--      width = 30,
+--      height = 30,
+--      hide_root_folder = false,
+--      side = "left",
+--  },
+  }
 
 vim.g.nvim_tree_icons = {
   default = "",
