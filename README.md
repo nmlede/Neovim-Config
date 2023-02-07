@@ -1,4 +1,5 @@
 # __Neovim__
+![nvimProyect](https://user-images.githubusercontent.com/68403740/217375365-a223cbd7-0af5-4983-a982-e5d35813e9c5.jpeg)
 
 Esta es la configuracion de neovim con los pluguis y seteos que mas utilizo en mi dia a dia.
 
@@ -24,3 +25,4 @@ instalador escrito en bash.
 5. Disfruta, me llevo tiempo!
 
 ## __Trabajo en proceso.__
+
