@@ -5,7 +5,6 @@
 --
 --
 --
-
 -- Iconos 
   local kind_icons = {
   Text = "",
@@ -102,6 +101,4 @@ cmp.setup({
 --   require('lspconfig')['pyright'].setup {
 --     capabilities = capabilities
 -- }
-  
-
 

@@ -20,20 +20,7 @@ touch Install.log
 
 function copy_files(){
     # Fucion quie copia los archivos dentro de la carpeta destino
-    cp $PWD/nvim/Modulos/colorscheme.vim $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/dashboard.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/general.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/indent-guides.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/keymap.vim $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/lspconfig.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/lualine.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/nvim-cmp.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/nvim-tree.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/plugins.vim $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/tagbar.vim $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/telescope.vim $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/treesitter.lua $HOME/.config/nvim/Modulos/
-    cp $PWD/nvim/Modulos/wilder.vim $HOME/.config/nvim/Modulos/
+    for i in $PWD/nvim/Modulos/*; do echo 'Copiando' $i; cp $i $HOME/.config/nvim/Modulos/
     }
 
 echo "#################################"
