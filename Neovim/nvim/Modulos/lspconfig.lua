@@ -22,7 +22,7 @@ require("nvim-lsp-installer").setup({
 local nvim_lsp={
   flags = {debounce_text_change = 150,
   },
-  capabilities = require('cmp_nvim_lsp').update_capabilities(
+  capabilities = require('cmp_nvim_lsp').default_capabilities(
   vim.lsp.protocol.make_client_capabilities()
   ),
   on_attach = function(client,bufnr)

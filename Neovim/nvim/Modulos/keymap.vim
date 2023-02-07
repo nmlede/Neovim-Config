@@ -22,7 +22,7 @@ let g:mapleader=";"
 
 " Dashboard "-----------------------------------------------------
 nnoremap <Leader>cf :e ~/.config/nvim/init.vim<CR>
-nnoremap <Leader>nf :DashboardNewFile<CR>
+nnoremap <Leader>nf :enew<CR>
 nnoremap <Leader>db :Dashboard<CR>
 
 " nvim-tree.lua "-------------------------------------------------
