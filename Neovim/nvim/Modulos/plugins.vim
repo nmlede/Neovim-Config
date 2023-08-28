@@ -8,8 +8,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Themes -----------------------
-Plug 'joshdick/onedark.vim'
+"Plug 'joshdick/onedark.vim'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'navarasu/onedark.nvim'
 " Lualine ----------------------
 Plug 'nvim-lualine/lualine.nvim'
 " Devicons ---------------------
