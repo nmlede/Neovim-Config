@@ -1,2 +1,3 @@
-lua/.luarc.lua
-lua/lazy-lock.json
+neovim/lazo-lock.json
+neovim/lua/plugins/lazy-lock.json
+neovim/lua/plugins/.luarc.lua
