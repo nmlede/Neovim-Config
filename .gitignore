@@ -1,3 +1,4 @@
 neovim/lazo-lock.json
 neovim/lua/plugins/lazy-lock.json
 neovim/lua/plugins/.luarc.lua
+logs
